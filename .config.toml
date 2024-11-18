@@ -1,0 +1,41 @@
+theme = "zed_onedark"
+
+[editor]
+mouse = true
+middle-click-paste = false
+rulers = [100, 120]
+popup-border = "all"
+insert-final-newline = true
+completion-replace = true
+true-color = true
+bufferline = "multiple"
+
+[editor.soft-wrap]
+enable = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[editor.statusline]
+left = ["mode", "spacer", "spacer","version-control", "file-name", "file-modification-indicator"]
+right = ["diagnostics", "selections", "position", "file-type"]
+mode.normal = "NOR"
+mode.insert = "INS"
+mode.select = "SEL"
+
+[editor.lsp]
+display-messages = true
+display-inlay-hints = true
+
+[editor.gutters.line-numbers]
+min-width = 1
+
+[editor.auto-save]
+focus-lost = true
+after-delay.enable = true
+after-delay.timeout = 150000
